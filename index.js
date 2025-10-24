@@ -19,7 +19,7 @@ if (process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
   serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
 } else {
   // Si estás en local, se usa el archivo
-  serviceAccount = require('./firebase_key.json');
+  serviceAccount = require('./Firebase_key.json');
 }
 
 admin.initializeApp({

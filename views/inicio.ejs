@@ -15,23 +15,26 @@
     }
 </style>
 <body>
-<% productos.forEach((producto) => { %>
-<div class="container mt-4">
-    
-    <div class="row d-flex justify-content-center g-1">
-        
-        <div class="col-md-4">
-                <div class="product text-center"> <img src=<%= producto.imagen %> width="250">
+<section class="our-webcoderskull padding-lg">
+
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2>Our Team</h2>
+    </div>
+    <ul class="row">
+        <% productos.forEach((producto) => { %>
+      <li class="col-12 col-md-6 col-lg-12">
+            <div class="product text-center"> <img src=<%= producto.imagen %> width="250">
                     <div class="about text-left px-3">
                         <h4><%= producto.nombre %></h4> <span class="text-muted"><%= producto.descripcion %></span>
                         <h3><%= producto.precio %></h3>
                     </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
-                </div>
-            
-        </div>
-        
-    </div>
-<% }) %>
-</div>
+                </div>            
+            </ul>
+          </div>
+      </li>
+      <% }) %>
+    </ul>
+</section>
 </body>
 </html>
